@@ -1,11 +1,9 @@
+import { Box, Button, Container, makeStyles, Paper, Typography } from '@material-ui/core';
 import React from 'react';
-import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
-import { cartTotalSelectorCard } from './selector.js';
-import { Box, Grid, Paper, makeStyles, Typography, Button } from '@material-ui/core';
-import { Container } from '@material-ui/core';
-import CartItem from './CartItem';
 import { formatPrice } from './../../ultils/common';
+import CartItem from './CartItem';
+import { cartTotalSelectorCard } from './selector.js';
 
 CartFeature.propTypes = {};
 const useStyles = makeStyles((theme) => ({
@@ -19,9 +17,9 @@ const useStyles = makeStyles((theme) => ({
     title: {
         paddingTop: theme.spacing(2),
     },
-    buttonPayment:{
-        textAlign:'center',
-    }
+    buttonPayment: {
+        textAlign: 'center',
+    },
 }));
 
 function CartFeature(props) {
